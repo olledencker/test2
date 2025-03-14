@@ -30,6 +30,7 @@ public class EspressoRestConsumer {
 	}
     private static String buildWebQuery(Map<String, String> parameters) throws Exception {
         StringBuilder sb = new StringBuilder();
+	System.out.println("sadfasfd")
         for (Map.Entry<String, String> entry : parameters.entrySet()) {
             String key = URLEncoder.encode(entry.getKey(), "UTF-8");
             String value = URLEncoder.encode(entry.getValue(), "UTF-8");
